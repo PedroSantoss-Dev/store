@@ -9,9 +9,9 @@ export const ContainerLoginScreen = styled.section`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background: #ff416c;
-  background: -webkit-linear-gradient(to right, #ff4b2b, #ff416c);
-  background: linear-gradient(to right, #ff4b2b, #ff416c);
+  background: #535bf2;
+  background: -webkit-linear-gradient(to right, #535bf2, #2c98d6, #2c76d6);
+  background: linear-gradient(to right, #535bf2, #2c98d6, #2c76d6);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 0;

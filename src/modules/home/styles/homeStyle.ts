@@ -9,6 +9,8 @@ export const Container = styled.div`
 
   @media (max-width: 768px) {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
   }
 `;

@@ -9,10 +9,10 @@ const ProductCard = ({ id, title, price, category, description, image }: IProduc
     <Card
       key={id}
       hoverable
-      style={{ width: 230 }}
+      style={{ width: 230, padding: '0.4rem' }}
       cover={
         <img
-          style={{ width: '80%', objectFit: 'fill', margin: '0 auto' }}
+          style={{ width: '80%', height: '11rem', objectFit: 'fill', margin: '0 auto' }}
           alt={description}
           src={image}
         />
