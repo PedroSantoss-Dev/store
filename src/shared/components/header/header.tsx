@@ -1,6 +1,7 @@
 import { HeartOutlined, MenuOutlined, ShopOutlined, ShoppingOutlined } from '@ant-design/icons';
 
 import Logo from '../../../assets/logo.png';
+import { Cart } from '../../../modules/Cart/screen/cart';
 import { ModalLogin } from '../modal/modal';
 import * as S from './header.styles';
 
@@ -32,7 +33,7 @@ export const Header = ({ toggle }: Itoggle) => {
             </S.Item>
             <S.Item>
               <S.NavLinks>
-                <ShoppingOutlined />
+                <Cart />
               </S.NavLinks>
             </S.Item>
             <S.Item>
