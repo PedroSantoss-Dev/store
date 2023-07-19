@@ -1,4 +1,4 @@
-import { HeartOutlined, MenuOutlined, ShopOutlined, ShoppingOutlined } from '@ant-design/icons';
+import { HeartOutlined, MenuOutlined, ShopOutlined } from '@ant-design/icons';
 
 import Logo from '../../../assets/logo.png';
 import { Cart } from '../../../modules/Cart/screen/cart';

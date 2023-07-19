@@ -1,4 +1,4 @@
-import { IProduct } from '../../../modules/home/components/types/product.types';
+import { IProduct } from '../../@types/product.types';
 import * as S from './drawer.style';
 
 interface IDrawer {

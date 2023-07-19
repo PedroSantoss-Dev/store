@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 
+import { IProduct } from '../../../shared/@types/product.types';
+import ProductCard from '../../../shared/components/card/productCard';
 import { PRODUCT } from '../../../shared/constants/urls';
-import ProductCard from '../components/product/productCard';
-import { IProduct } from '../components/types/product.types';
 import * as S from '../styles/homeStyle';
 
 const HomeScreen = () => {

@@ -1,6 +1,6 @@
 import { Card } from 'antd';
 
-import { IProduct } from '../types/product.types';
+import { IProduct } from '../../@types/product.types';
 
 const { Meta } = Card;
 
