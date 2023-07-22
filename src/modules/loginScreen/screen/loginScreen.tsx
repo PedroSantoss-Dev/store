@@ -9,7 +9,7 @@ import * as S from '../styles/loginScreen.style';
 const LoginScreen = () => {
   const [user, setUser] = useState('');
   const [password, setPassword] = useState('');
-  const { request } = useRequest();
+  const { login } = useRequest(LOGIN);
   const handleUser = (event: React.ChangeEvent<HTMLInputElement>) => {
     setUser(event?.target.value);
   };
@@ -19,10 +19,7 @@ const LoginScreen = () => {
   };
 
   const handleLogin = async () => {
-    request('post', LOGIN, {
-      username: user,
-      password: password,
-    });
+    login(user, password);
   };
 
   return (

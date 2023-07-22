@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+export const Container = styled.main`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-items: start;
@@ -13,4 +13,12 @@ export const Container = styled.div`
     align-items: center;
     flex-direction: column;
   }
+`;
+export const SpinContainer = styled.section`
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e0dede;
 `;
