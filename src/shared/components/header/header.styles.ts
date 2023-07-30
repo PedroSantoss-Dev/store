@@ -75,7 +75,26 @@ export const Item = styled.div`
 `;
 
 //This navLinks component is a link from react-scroll lib:
-export const NavLinks = styled.div`
+export const NavLinks = styled(Link)`
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  font-weight: 600;
+  height: 100%;
+  cursor: pointer;
+  /* &.signUp {
+    color: ${firstColor};
+  } */
+  &:hover {
+    color: ${firstAltColor};
+  }
+  &.active {
+    border-bottom: 4px solid ${firstColor};
+  }
+`;
+export const NavModal = styled.div`
   color: #fff;
   display: flex;
   align-items: center;

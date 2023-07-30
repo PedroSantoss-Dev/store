@@ -1,4 +1,4 @@
-import { HeartOutlined, MenuOutlined, ShopOutlined } from '@ant-design/icons';
+import { MenuOutlined, ShopOutlined, UserOutlined } from '@ant-design/icons';
 
 import Logo from '../../../assets/logo.png';
 import { Cart } from '../../../modules/Cart/screen/cart';
@@ -22,23 +22,23 @@ export const Header = ({ toggle }: Itoggle) => {
 
           <S.Menu>
             <S.Item>
-              <S.NavLinks>
+              <S.NavLinks to="/home">
                 <ShopOutlined />
               </S.NavLinks>
             </S.Item>
             <S.Item>
-              <S.NavLinks>
-                <HeartOutlined />
-              </S.NavLinks>
-            </S.Item>
-            <S.Item>
-              <S.NavLinks>
-                <Cart />
-              </S.NavLinks>
-            </S.Item>
-            <S.Item>
-              <S.NavLinks>
+              <S.NavModal>
                 <ModalLogin />
+              </S.NavModal>
+            </S.Item>
+            <S.Item>
+              <S.NavModal>
+                <Cart />
+              </S.NavModal>
+            </S.Item>
+            <S.Item>
+              <S.NavLinks to="/login">
+                <UserOutlined />
               </S.NavLinks>
             </S.Item>
           </S.Menu>

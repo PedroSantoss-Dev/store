@@ -1,6 +1,7 @@
-import { UserOutlined } from '@ant-design/icons';
+import { HeartOutlined } from '@ant-design/icons';
 import { useState } from 'react';
 
+import FavoriteScreen from '../../../modules/favorite';
 import Button from '../buttons/button';
 import * as S from './modal.style';
 
@@ -16,11 +17,10 @@ export const ModalLogin = () => {
   const handleCancel = () => {
     setIsModalOpen(false);
   };
-
   return (
     <>
       <S.BtnModal onClick={showModal}>
-        <UserOutlined />
+        <HeartOutlined />
       </S.BtnModal>
       <S.ModalContainer
         title="pra ver seus pedidos e ter uma experiência personalizada, acesse sua conta :)"
@@ -31,14 +31,7 @@ export const ModalLogin = () => {
         cancelButtonProps={{ disabled: true }}
         footer={[<Button key={null} type="primary" style={{ display: 'none' }}></Button>]}
       >
-        <S.Container>
-          <Button margin="1rem" width="8rem">
-            Login
-          </Button>
-          <Button type="primary" margin="1rem" width="8rem">
-            Cadastrar
-          </Button>
-        </S.Container>
+        <FavoriteScreen />
       </S.ModalContainer>
     </>
   );

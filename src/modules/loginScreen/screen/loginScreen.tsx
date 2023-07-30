@@ -2,6 +2,7 @@ import { useState } from 'react';
 
 import Button from '../../../shared/components/buttons/button';
 import Input from '../../../shared/components/inputs/input';
+import { Screen } from '../../../shared/components/screen/screen';
 import { LOGIN } from '../../../shared/constants/urls';
 import useRequest from '../../../shared/hooks/useRequest';
 import * as S from '../styles/loginScreen.style';
@@ -23,18 +24,20 @@ const LoginScreen = () => {
   };
 
   return (
-    <S.ContainerLoginScreen>
-      <S.ContainerText>
-        <S.Title>Digite seu usuário e senha para fazer login.</S.Title>
-      </S.ContainerText>
-      <S.ContainerForm>
-        <Input title="Usuario" onChange={handleUser} value={user} />
-        <Input title="Senha" type="password" onChange={handlePassword} />
-        <Button width="6rem" margin="1.6rem" onClick={handleLogin}>
-          Entrar
-        </Button>
-      </S.ContainerForm>
-    </S.ContainerLoginScreen>
+    <Screen>
+      <S.ContainerLoginScreen>
+        <S.ContainerText>
+          <S.Title>Digite seu usuário e senha para fazer login.</S.Title>
+        </S.ContainerText>
+        <S.ContainerForm>
+          <Input title="Usuario" onChange={handleUser} value={user} />
+          <Input title="Senha" type="password" onChange={handlePassword} />
+          <Button width="6rem" margin="1.6rem" onClick={handleLogin}>
+            Entrar
+          </Button>
+        </S.ContainerForm>
+      </S.ContainerLoginScreen>
+    </Screen>
   );
 };
 export default LoginScreen;
