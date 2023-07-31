@@ -2,7 +2,6 @@ import { Spin } from 'antd';
 
 import { IProduct } from '../../../shared/@types/product.types';
 import ProductCard from '../../../shared/components/card/productCard';
-import { Header } from '../../../shared/components/header/header';
 import { Screen } from '../../../shared/components/screen/screen';
 import { PRODUCT } from '../../../shared/constants/urls';
 import useRequest from '../../../shared/hooks/useRequest';

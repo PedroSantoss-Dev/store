@@ -1,11 +1,11 @@
 import { HeartOutlined } from '@ant-design/icons';
 import { useState } from 'react';
 
-import FavoriteScreen from '../../../modules/favorite';
+import FavoriteScreen from '../../../modules/favorite/screen/favoriteScreen';
 import Button from '../buttons/button';
 import * as S from './modal.style';
 
-export const ModalLogin = () => {
+export const Modal = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const showModal = () => {

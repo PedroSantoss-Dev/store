@@ -2,7 +2,7 @@ import { MenuOutlined, ShopOutlined, UserOutlined } from '@ant-design/icons';
 
 import Logo from '../../../assets/logo.png';
 import { Cart } from '../../../modules/Cart/screen/cart';
-import { ModalLogin } from '../modal/modal';
+import { Modal } from '../modal/modal';
 import * as S from './header.styles';
 
 interface Itoggle {
@@ -28,7 +28,7 @@ export const Header = ({ toggle }: Itoggle) => {
             </S.Item>
             <S.Item>
               <S.NavModal>
-                <ModalLogin />
+                <Modal />
               </S.NavModal>
             </S.Item>
             <S.Item>

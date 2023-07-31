@@ -6,6 +6,12 @@ export const ModalContainer = styled(Modal)`
   .ant-modal-title {
     margin: 10px;
   }
+  h4 {
+    white-space: nowrap;
+    width: 12rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 `;
 export const Container = styled.section`
   width: 100%;
